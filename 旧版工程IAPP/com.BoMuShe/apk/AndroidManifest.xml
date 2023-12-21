@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.BoMuShe" android:versionCode="1" android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <application android:icon="@mipmap/i" android:label="@string/app_name" android:supportsRtl="true" android:largeHeap="true" android:resizeableActivity="true" android:hardwareAccelerated="true" android:requestLegacyExternalStorage="true" android:networkSecurityConfig="@xml/network_config" android:name="i.app.applicationMain" android:theme="@style/AppBaseTheme">
+        <activity android:name=".main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="i.app.FileProvider" android:exported="false" android:authorities="com.i0870c0c6163e42fj.myFileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider"/>
+        </provider>
+        <meta-data android:name="i_app_multiDex" android:value="shi"/>
+        <meta-data android:name="i_app_autoPermission" android:value="shi"/>
+        <meta-data android:name="i_app_logOutput" android:value="shi"/>
+        <meta-data android:name="i_app_errLogOutput" android:value="shi"/>
+    <activity android:name=".log_in"/>
+
+<activity android:name=".Home_page_navigation"/>
+<activity android:name=".gerenzhuye"/>
+<activity android:name=".tarenzhuye"/>
+<activity android:name=".register"/>
+<activity android:name=".zysy"/>
+<activity android:name=".wiki"/>
+<activity android:name=".wuqishichang"/>
+<activity android:name=".fangjushichang"/>
+<activity android:name=".zhuijiashichang"/>
+<activity android:name=".teshushichang"/>
+<activity android:name=".wangshishichang"/>
+<activity android:name=".waiguanshichang"/>
+<activity android:name=".chuankongshichang"/>
+<activity android:name=".weituoshichang"/>
+<activity android:name=".xingshishichang"/>
+<activity android:name=".jiangcaishichang"/>
+<activity android:name=".sousuo"/>
+<activity android:name=".gongju"/>
+<activity android:name=".jiaosemoni"/>
+<activity android:name=".zhaohuimima"/>
+<activity android:name=".zhuangbeipeizhi"/>
+<activity android:name=".fumobomu"/>
+<activity android:name=".jianyiwuqizhengshuxing"/>
+<activity android:name=".jinengmoni"/>
+<activity android:name=".fumoquancitiao"/>
+<activity android:name=".fangjufumoquancitiao"/>
+<activity android:name=".wuqifumoquancitiao"/>
+<activity android:name=".jianyifangjuzhengshuxing"/>
+<activity android:name=".jianyiwuqituiqian"/>
+<activity android:name=".jianyifangjutuiqian"/>
+<activity android:name=".list_bk"/>
+<activity android:name=".shichang"/>
+<activity android:name=".release"/>
+<activity android:name=".list_emio"/>
+
+<activity android:name=".emio"/>
+<activity android:name="com.android.king.fileselector.FileSelectorActivity"/>
+<activity android:name="tp.xz.SelectedPhotoActivity"/>
+<activity android:name="tp.xz.PreviewActivity"/>
+<activity android:name=".tc_str"/>
+<activity android:name=".content"/>
+<activity android:name=".tc_str"/>
+
+
+<activity android:name=".luntan"/>
+<activity android:name=".xiaoxi"/>
+<activity android:name=".shezhi"/>
+<activity android:name=".shequn"/>
+<activity android:name=".gonglue"/>
+
+<activity android:name=".tiezijiemian"/>
+
+<activity android:name=".fadetiezi"/>
+
+<activity android:name=".liulanqi"/>
+<activity android:name=".youxianzhuang"/>
+<activity android:name=".youxianzhuangmoban"/>
+
+<activity android:name=".shijieliaotian"/>
+<activity android:name=".fumomoni_qingfeng"/>
+<activity android:name=".fumomoni"/>
+<activity android:name=".shengjiluxian"/>
+
+
+<activity android:name=".shengjimuban"/>
+
+
+<activity android:name=".jingyanluxian"/>
+<activity android:name=".liaolimuban"/>
+<activity android:name=".guanyuruanjian"/>
+<activity android:name=".zaixianfankuibug"/>
+</application>
+<uses-permission android:name="android.permission.VIBRATE"/>
+<uses-permission android:name="android.permission.PERSISTENT_ACTIVITY"/>
+</manifest>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/shengjiluxian_v" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <_Yu5Src><onCreate><onCreate>//载入事件内会加载布局，不使用该事件则不加载布局
+</onCreate></onCreate><iClass><iClass>string[] up_text_one = {}
+string up_text_two = ""
+string[] up_text = {}
+
+string liaoli = ""
+string lv = ""
+string name = ""
+s lili = null
+
+
+/*
+def isInRange(x, a, b):
+return a &lt;= x and x &lt;= b
+
+def isInTwoRanges(a, b):
+return isInRange(b, a-9, a+9) and isInRange(b, a, a+9)
+
+a = int(input("请输入一个整数: "))
+b = int(input("请输入另一个整数: "))
+if isInTwoRanges(a, b):
+print("存在此区间！")
+else:
+print("不存在此区间！")
+
+
+```java
+import java.util.Scanner;
+
+public class Main {
+public static boolean isInRange(int x, int a, int b) {
+return a &lt;= x &amp;&amp; x &lt;= b ? true : false;
+}
+
+public static boolean isInTwoRanges(int a, int b) {
+return isInRange(b, a-9, a+9) &amp;&amp; isInRange(b, a, a+9);
+}
+
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("请输入两个整数: ");
+int a = sc.nextInt();
+int b = sc.nextInt();
+if (isInTwoRanges(a, b)) {
+System.out.println("存在此区间！");
+} else {
+System.out.println("不存在此区间！");
+}
+}
+}
+```
+public static boolean isInInterval(int a, int x) {
+// a是区间的中点，x是要检查的参数
+// 如果x在a-9到a+9之间，返回true，否则返回false
+return x &gt;= a - 9 &amp;&amp; x &lt;= a + 9;
+}
+
+
+//|(replace[玩家等级-boss等级)]|＊boss经验 .[[0-5]=11,6=10,7=9,8=7,9=3,10=1]
+
+狮虎今天感觉好凶,是不是累了www
+*/
+
+
+ff boolean isInTwoRanges(int a, int x){
+  rg a != "" || x != ""{
+    fh x &gt;= a - 9 &amp;&amp; x &lt;= a + 9
+  },{
+    fh false
+  }
+}
+
+ff string calculate(int a, int b, int exp){
+  int c = a -b
+  rg c &lt; 0 {
+    c = -c
+  }
+  int d = 0
+  rg c &lt;= 5{
+    d = 11
+  },c == 6{
+    d = 10
+  },c == 7{
+    d = 9
+  },c == 8{
+    d = 7
+  },c == 9{
+    d = 3
+  },c == 10{
+    d = 1
+  }
+  fh d * exp
+}
+
+/*
+好的，这是使用Java编写的代码：
+
+public static int calculate(int a, int b, int boss) {
+int c = a - b;
+if (c &lt; 0) {
+c = -c;
+}
+int d = 0;
+if (c == 0 || c == 5) {
+d = 11;
+} else if (c == 6) {
+d = 10;
+} else if (c == 7) {
+d = 9;
+} else if (c == 8) {
+d = 7;
+} else if (c == 9) {
+d = 3;
+} else if (c == 10) {
+d = 1;
+}
+return d * boss;
+}
+你在拆包?
+```
+
+这个方法与之前的Python方法非常相似。它接受三个参数，a和b是两个整数，boss是一个整数。它计算a-b的值并将其存储在变量c中。如果c是负数，则将其转换为正数。然后，根据c的值，将d变量设置为11、10、9、7、3或1。最后，它返回d * boss的结果。
+
+希望这可以帮到你。如果你有任何其他问题，请告诉我。
+*/
+ff hqlbsx(){
+  gj.xc(){
+    //读取txt文件,存入boss变量中
+    s boss = wj.dqwb("%Bomm/liaoli.txt")
+    
+    //获取编辑框1的对象
+    s dl = st.bjk(zy.i.bjk1)
+    //创建名为boss2的字符串数组
+    string[] boss2 = {}
+    
+    //将boss的字符串文本进行分割,存入boss2变量中
+    boss2 = zf.fg(boss, "¥")
+    //将boss2变量转入全局变量up_text_one中
+    up_text_one = boss2
+    
+    //创建线程
+    gj.jmxc(){
+      //获取全局变量up_text_one数组长度并存入len变量中
+      s len = up_text_one.length - 1
+      
+      //获取v7列表对象对象
+      s tzlb = st.v7lb(zy.i.v7lb1)
+      
+      s lbmb = tzlb.v7lbspq(liaolimuban.lei, zy.b.liaolimuban)
+      s ids = { zy.i.liaoli, zy.i.lv, zy.i.name, zy.i.liaolis }
+      
+      
+      
+      xh s i=0, i&lt;len, i++{
+        up_text_two = up_text_one[i]
+        // gj.sc(up_text_two)
+        
+        rg up_text_two != "" || up_text_two != null{
+          
+          
+          up_text = zf.fg(up_text_two, ";")
+          /*
+          gj.sc(up_text[0])
+          gj.sc(up_text[1])
+          gj.sc(up_text[2])
+          gj.sc(up_text[3])
+          gj.sc(up_text[4])
+          */
+          liaoli = zf.th(zf.qctwkg(up_text[0]), " ", "")
+          lv = up_text[1]
+          name = up_text[2]
+          
+          rg liaoli ? "HP"{
+            lili = "黄金炒饭"
+          },{
+            lili = null
+          }
+          //gj.sc(boss_name)
+          
+          s values = { liaoli, lv, name, lili }
+          lbmb.j(ids, values)
+          lbmb.sx()
+          
+        }
+      }
+    }
+  }
+}
+
+/*
+如果你想用Java写一个方法，不使用任何库和函数，往字符串数组里的最后面添加字符串数组，返回二维数组，你可以参考以下代码：
+
+```java
+public static String[][] addArray(String[] arr, String[] arr2) {
+//创建一个二维数组，长度等于原数组和要添加的数组的和
+String[][] result = new String[arr.length + arr2.length][];
+//把原数组的每个元素复制到二维数组的第一列
+for (int i = 0; i &lt; arr.length; i++) {
+result[i] = new String[]{arr[i]};
+}
+//把要添加的数组的每个元素复制到二维数组的后面
+for (int i = 0; i &lt; arr2.length; i++) {
+result[arr.length + i] = new String[]{arr2[i]};
+}
+//返回二维数组
+return result;
+}
+```
+*/</iClass></iClass><__layoutIsLoaded><__layoutIsLoaded>hqlbsx()</__layoutIsLoaded></__layoutIsLoaded><onDestroy><onDestroy>gj.xc(){
+  string a = "https://jishiben.me/share/YTgzUF9fFgZcWlsCClpMQ1FaDV0"
+  // post提交的数据，对应name1=value1&amp;name2=value2，这个参数可以设置 null 则为 get方式
+  string[] b = {}
+  // 编码
+  s c = "utf-8"
+  // 传递cookie项值，格式为nama=value 下例： uid=112;name=nihao;sb=123456789;
+  s d = ""
+  // 带自动设置cookie方式获取网页，并记录当前网页的Cookie
+  s e = true
+  // 设置Header头:（可设置多条，以“||”隔开）文件头包括了Cookie，User-Agent设备型号
+  s f = "User-Agent=Mozilla/5.0 (iPad; U; CPU OS 6_0 like Mac OS X; zh-CN; iPad2)||accept=*/*||accept-language=zh-CN"
+  string str = wl.hq(a, b, c, d, e, f, 20000, 20000, null)
+  rg str != null{
+    string strs = zf.qctwkg(zf.qc(str, "(料理)", "(/料理)"))
+    wj.xrwb("%Bomm/liaoli.txt", strs, "utf-8")
+  },{
+    
+  }
+}</onDestroy></onDestroy></_Yu5Src><androidx.cardview.widget.CardView android:id="@+id/kp1" android:layout_width="fill_parent" android:layout_height="50dp" app:cardCornerRadius="0dp" app:cardBackgroundColor="#ff6ba1ff"><LinearLayout android:id="@+id/xxbj3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal"><LinearLayout android:id="@+id/xxbj4" android:layout_width="50dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx1" android:layout_width="25dp" android:layout_height="30dp" android:src="@mipmap/fanhui"><Yu5Src><setOnClickListener><onClick>gj.gb()</onClick></setOnClickListener></Yu5Src></ImageView></LinearLayout><LinearLayout android:id="@+id/xxbj5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical" android:layout_weight="1"><TextView android:id="@+id/wb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="料理查询" android:textSize="20dp" android:textColor="#ffffffff" android:fontFamily="@font/system"/></LinearLayout><LinearLayout android:id="@+id/xxbj7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="right"><LinearLayout android:id="@+id/xxbj8" android:layout_width="50dp" android:layout_height="50dp" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx2" android:layout_width="30dp" android:layout_height="30dp" android:src="@mipmap/i"/></LinearLayout></LinearLayout><Yu5Src><setOnClickListener><onClick/></setOnClickListener></Yu5Src></LinearLayout></androidx.cardview.widget.CardView><androidx.cardview.widget.CardView android:id="@+id/kp2" android:layout_width="fill_parent" android:layout_height="45dp" app:cardCornerRadius="0dp"><LinearLayout android:id="@+id/xxbj1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><EditText android:id="@+id/bjk1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:gravity="center" android:background="#00000000" android:hint="请输入你需要的料理" android:layout_marginTop="5dp" android:inputType="text" android:textSize="15dp"><Yu5Src><addTextChangedListener><onTextChanged>s nr = st.bjk(zy.i.bjk1)
+rg nr.zf() != ""{
+  gj.xc(){
+    //读取txt文件,存入boss变量中
+    s boss = wj.dqwb("%Bomm/liaoli.txt", "utf-8")
+    
+    //创建名为boss2的字符串数组
+    string[] boss2 = {}
+    
+    //将boss的字符串文本进行分割,存入boss2变量中
+    boss2 = zf.fg(boss, "¥")
+    //将boss2变量转入全局变量up_text_one中
+    up_text_one = boss2
+    
+    //创建线程
+    gj.jmxc(){
+      
+      //获取编辑框1的对象
+      s dl = st.bjk(zy.i.bjk1)
+      
+      //获取全局变量up_text_one数组长度并存入len变量中
+      s len = up_text_one.length - 1
+      
+      //获取v7列表对象对象
+      s tzlb = st.v7lb(zy.i.v7lb1)
+      s lbmb = tzlb.v7lbspq(liaolimuban.lei, zy.b.liaolimuban)
+      s ids = { zy.i.liaoli, zy.i.lv, zy.i.name, zy.i.liaolis }
+      
+      string[] ewsz = {}
+      xh s i=0, i&lt;len, i++{
+        up_text_two = up_text_one[i]
+        
+        // gj.(up_text_two)
+        
+        up_text = zf.fg(up_text_two, ";")
+        
+        s pl = zf.qctwkg(zf.zhdx(up_text[0]))
+        s ps = zf.zhdx(dl.zf())
+        gj.sc(pl)
+        gj.sc(ps)
+        rg pl ? ps{
+          liaoli = zf.qctwkg(up_text[0])
+          lv = up_text[1]
+          name = up_text[2]
+          
+          rg liaoli ? "HP"{
+            lili = "黄金炒饭"
+          },{
+            lili = null
+          }
+          
+          //gj.(dl_zf + 1)添加数据
+          s values = { liaoli, lv, name, lili }
+          
+          //将数组列表存入到新的列表成为二维数组
+          //s arrays = cj.arrays()
+          //ewsz = arrays.appendArrayToString(ewsz, values)
+          
+          s lb_sj = lbmb.j(ids, values)
+          
+          //gj.(lb_sj)
+          lbmb.sx()
+        }
+        
+        
+        
+        
+        
+        /*
+        rg up_ssss ?* dl.zf() {
+        boss_name = zf.th(zf.qctwkg(up_text[0]), " ", "")
+        sx = up_text[1]
+        map = up_text[2]
+        boss_lv = up_text[3]
+        exp = up_text[4]
+        
+        
+        
+        
+        s values = { boss_name, sx, map, boss_lv, exp }
+        lbmb.j(ids, values)
+        lbmb.sx()
+        }
+        */
+      }
+    }
+  }
+},{
+  hqlbsx()
+}</onTextChanged><beforeTextChanged/><afterTextChanged/></addTextChangedListener><setOnFocusChangeListener><onFocusChange/></setOnFocusChangeListener><setOnEditorActionListener><onEditorAction/></setOnEditorActionListener><setOnClickListener><onClick/></setOnClickListener></Yu5Src></EditText><LinearLayout android:id="@+id/xxbj2" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#ff000000" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp"/></LinearLayout></androidx.cardview.widget.CardView><androidx.cardview.widget.CardView android:id="@+id/kp3" android:layout_width="fill_parent" android:layout_height="fill_parent"><LinearLayout android:id="@+id/xxbj6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_horizontal"><androidx.recyclerview.widget.RecyclerView android:id="@+id/v7lb1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ffdedede" app:layoutManager="android.support.v7.widget.GridLayoutManager" app:spanCount="2" android:orientation="horizontal" android:clipToPadding="true"/></LinearLayout></androidx.cardview.widget.CardView></LinearLayout>

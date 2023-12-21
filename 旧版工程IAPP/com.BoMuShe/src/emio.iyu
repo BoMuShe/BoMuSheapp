@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/emio_v" android:layout_width="match_parent" android:layout_height="match_parent">
+    <_Yu5Src><onCreate><onCreate>//载入事件内会加载布局，不使用该事件则不加载布局
+</onCreate></onCreate><__layoutIsLoaded><__layoutIsLoaded/></__layoutIsLoaded><iClass><iClass/></iClass></_Yu5Src><androidx.recyclerview.widget.RecyclerView android:id="@+id/v7lb1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp"/></RelativeLayout>

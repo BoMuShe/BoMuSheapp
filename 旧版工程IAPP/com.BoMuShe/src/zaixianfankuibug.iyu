@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/zaixianfankuibug_v" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <_Yu5Src><onCreate><onCreate>//载入事件内会加载布局，不使用该事件则不加载布局
+</onCreate></onCreate><__layoutIsLoaded><__layoutIsLoaded>gj.jmxc{
+  s llq = st.llq(zy.i.llq1)
+  s html = "https://www.diaochapai.com/survey3814226"
+  s htmls = wl.hq(html, "utf-8")
+  llq.zrwz(html)
+  gj.sc(htmls)
+}
+
+</__layoutIsLoaded></__layoutIsLoaded></_Yu5Src><WebView android:id="@+id/llq1" android:layout_width="fill_parent" android:layout_height="fill_parent"><Yu5Src><setWebViewClient><shouldOverrideUrlLoading/><onPageStarted/></setWebViewClient><setWebChromeClient><onProgressChanged>gj.jmxc(){
+  s html = st.llq(zy.i.llq1)
+  s urls = "https://www.diaochapai.com/survey3814226"
+  rg html.wz() != urls{
+    html.zrwz(urls)
+  }
+}</onProgressChanged></setWebChromeClient></Yu5Src></WebView></LinearLayout>

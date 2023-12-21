@@ -1,0 +1,16 @@
+ff s power(s x, s y){
+  rg y == 0{
+    fh 1
+  },y < 0{
+    fh power(1/x, -1*y)
+  },y % 2 == 1{
+    fh x * power(x, y-1)
+  },{
+    fh power(x, y/2) * power(x, y/2)
+  }
+}
+
+ff int toram_exp_need(s num){
+  s o = power(num, 4) / 40 + num * 2
+  fh o
+}

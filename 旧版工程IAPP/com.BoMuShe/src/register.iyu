@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/register_v" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <_Yu5Src><onCreate><onCreate>//载入事件内会加载布局，不使用该事件则不加载布局
+</onCreate></onCreate><iClass><iClass>qj s url = "https://18.176.156.100:9999"
+qj s code_num = ""
+s code = null
+s cookie = null
+
+ff djs(){
+  gj.xc(){
+    gj.jmxc(){
+      //倒计时
+      s la = st.wb(zy.i.wb5)
+      xh int a=60, a&gt;=0, a--{
+        gj.zt(1000)
+        rg a == 0{
+          la.kjd("visible")
+        }
+      }
+    }
+  }
+}</iClass></iClass></_Yu5Src><androidx.cardview.widget.CardView android:id="@+id/kp1" android:layout_width="fill_parent" android:layout_height="fill_parent"><LinearLayout android:id="@+id/xxbj1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"><androidx.cardview.widget.CardView android:id="@+id/kp2" android:layout_width="fill_parent" android:layout_height="50dp" app:cardElevation="0dp"><LinearLayout android:id="@+id/xxbj4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:gravity="left"><LinearLayout android:id="@+id/xxbj5" android:layout_width="50dp" android:layout_height="50dp" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx1" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/zjt"/><Yu5Src><setOnClickListener><onClick>gj.gb()</onClick></setOnClickListener></Yu5Src></LinearLayout></LinearLayout></androidx.cardview.widget.CardView><LinearLayout android:id="@+id/xxbj2" android:layout_width="fill_parent" android:layout_height="100dp" android:orientation="vertical" android:background="#8A8A8A" android:gravity="center"><TextView android:id="@+id/wb1" android:layout_width="fill_parent" android:layout_height="20dp" android:text="勇士，请在托拉姆写下你的故事" android:textColor="#ffffffff" android:gravity="center" android:textSize="15dp" android:fontFamily="@font/system"/><TextView android:id="@+id/wb3" android:layout_width="fill_parent" android:layout_height="20dp" android:text="Past lives couldn&amp;apos;t ever hold me down" android:textColor="#ffffffff" android:gravity="center" android:textSize="12dp" android:fontFamily="@font/system"/></LinearLayout><LinearLayout android:id="@+id/xxbj3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:gravity="right" android:background="#ff8a8a8a"><androidx.cardview.widget.CardView android:id="@+id/kp4" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardCornerRadius="25dp" android:background="#ff639eb7"><LinearLayout android:id="@+id/xxbj7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_horizontal"><LinearLayout android:id="@+id/xxbj8" android:layout_width="fill_parent" android:layout_height="10dp" android:orientation="vertical"/><LinearLayout android:id="@+id/xxbj9" android:layout_width="325dp" android:layout_height="50dp" android:orientation="vertical"><TextView android:id="@+id/wb2" android:layout_width="325dp" android:layout_height="fill_parent" android:text="注册冒险家社区账号" android:gravity="center_vertical" android:textSize="18dp" android:textColor="#ff000000" android:fontFamily="@font/system"/></LinearLayout><LinearLayout android:id="@+id/xxbj6" android:layout_width="325dp" android:layout_height="50dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><EditText android:id="@+id/bjk1" android:layout_width="315dp" android:layout_height="fill_parent" android:text="" android:hint="账号" android:background="#ffffffff" android:textCursorDrawable="@mipmap/txt1" android:inputType="textAutoCorrect" android:fontFamily="@font/system"><Yu5Src><addTextChangedListener><onTextChanged>gj.jmxc()
+{
+  s bjk1 = st.bjk(zy.id.bjk1).zf()
+  s bjk2 = st.bjk(zy.id.bjk2).zf()
+  s bjk3 = st.bjk(zy.id.bjk3).zf()
+  s bjk4 = st.bjk(zy.id.bjk4).zf()
+  s bjk5 = st.bjk(zy.id.bjk5).zf()
+  s an = st.xxbj(zy.i.xxbj25)
+  
+  rg bjk1==""||bjk2==""||bjk3==""||bjk4==""||bjk5==""
+  {
+    an.bj("#fff3f2f2")
+    //灰色
+  },{
+    an.bj("#ff68d2ff")
+    //蓝色
+  }
+}</onTextChanged></addTextChangedListener><setOnEditorActionListener><onEditorAction/></setOnEditorActionListener></Yu5Src></EditText></LinearLayout><LinearLayout android:id="@+id/xxbj11" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#ff000000"/></LinearLayout><LinearLayout android:id="@+id/xxbj12" android:layout_width="325dp" android:layout_height="50dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj13" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><EditText android:id="@+id/bjk2" android:layout_width="315dp" android:layout_height="fill_parent" android:text="" android:hint="密码" android:background="#ffffffff" android:textCursorDrawable="@mipmap/txt1" android:inputType="textPassword" android:fontFamily="@font/system"><Yu5Src><setOnClickListener><onClick/></setOnClickListener><addTextChangedListener><onTextChanged>gj.jmxc()
+{
+  s bjk1 = st.bjk(zy.id.bjk1).zf()
+  s bjk2 = st.bjk(zy.id.bjk2).zf()
+  s bjk3 = st.bjk(zy.id.bjk3).zf()
+  s bjk4 = st.bjk(zy.id.bjk4).zf()
+  s bjk5 = st.bjk(zy.id.bjk5).zf()
+  s an = st.xxbj(zy.i.xxbj25)
+  
+  rg bjk1==""||bjk2==""||bjk3==""||bjk4==""||bjk5==""
+  {
+    an.bj("#fff3f2f2")
+    //灰色
+  },{
+    an.bj("#ff68d2ff")
+    //蓝色
+  }
+}</onTextChanged></addTextChangedListener></Yu5Src></EditText></LinearLayout><LinearLayout android:id="@+id/xxbj14" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#ff000000"/></LinearLayout><LinearLayout android:id="@+id/xxbj15" android:layout_width="325dp" android:layout_height="50dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><EditText android:id="@+id/bjk3" android:layout_width="315dp" android:layout_height="fill_parent" android:text="" android:hint="确认密码" android:background="#ffffffff" android:textCursorDrawable="@mipmap/txt1" android:inputType="textPassword" android:fontFamily="@font/system"><Yu5Src><addTextChangedListener><onTextChanged>gj.jmxc()
+{
+  s bjk1 = st.bjk(zy.id.bjk1).zf()
+  s bjk2 = st.bjk(zy.id.bjk2).zf()
+  s bjk3 = st.bjk(zy.id.bjk3).zf()
+  s bjk4 = st.bjk(zy.id.bjk4).zf()
+  s bjk5 = st.bjk(zy.id.bjk5).zf()
+  s an = st.xxbj(zy.i.xxbj25)
+  
+  rg bjk1==""||bjk2==""||bjk3==""||bjk4==""||bjk5==""
+  {
+    an.bj("#fff3f2f2")
+    //灰色
+  },{
+    an.bj("#ff68d2ff")
+    //蓝色
+  }
+}</onTextChanged></addTextChangedListener></Yu5Src></EditText></LinearLayout><LinearLayout android:id="@+id/xxbj17" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#ff000000"/></LinearLayout><LinearLayout android:id="@+id/xxbj20" android:layout_width="325dp" android:layout_height="50dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj21" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><EditText android:id="@+id/bjk4" android:layout_width="315dp" android:layout_height="fill_parent" android:text="" android:hint="QQ邮箱(直接输入QQ号即可)" android:background="#ffffffff" android:textCursorDrawable="@mipmap/txt1" android:inputType="numberDecimal" android:fontFamily="@font/system"><Yu5Src><addTextChangedListener><onTextChanged>gj.jmxc()
+{
+  s bjk1 = st.bjk(zy.id.bjk1).zf()
+  s bjk2 = st.bjk(zy.id.bjk2).zf()
+  s bjk3 = st.bjk(zy.id.bjk3).zf()
+  s bjk4 = st.bjk(zy.id.bjk4).zf()
+  s bjk5 = st.bjk(zy.id.bjk5).zf()
+  s an = st.xxbj(zy.i.xxbj25)
+  
+  rg bjk1==""||bjk2==""||bjk3==""||bjk4==""||bjk5==""
+  {
+    an.bj("#fff3f2f2")
+    //灰色
+  },{
+    an.bj("#ff68d2ff")
+    //蓝色
+  }
+}</onTextChanged></addTextChangedListener></Yu5Src></EditText></LinearLayout><LinearLayout android:id="@+id/xxbj22" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#ff000000"/></LinearLayout><LinearLayout android:id="@+id/xxbj26" android:layout_width="325dp" android:layout_height="50dp" android:orientation="horizontal" android:gravity=""><LinearLayout android:id="@+id/xxbj27" android:layout_width="150dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><EditText android:id="@+id/bjk5" android:layout_width="140dp" android:layout_height="fill_parent" android:text="" android:hint="验证码" android:background="#ffffffff" android:textCursorDrawable="@mipmap/txt1" android:inputType="textCapWords" android:fontFamily="@font/system"><Yu5Src><addTextChangedListener><onTextChanged>gj.jmxc()
+{
+  s bjk1 = st.bjk(zy.id.bjk1).zf()
+  s bjk2 = st.bjk(zy.id.bjk2).zf()
+  s bjk3 = st.bjk(zy.id.bjk3).zf()
+  s bjk4 = st.bjk(zy.id.bjk4).zf()
+  s bjk5 = st.bjk(zy.id.bjk5).zf()
+  s an = st.xxbj(zy.i.xxbj25)
+  
+  rg bjk1==""||bjk2==""||bjk3==""||bjk4==""||bjk5==""
+  {
+    an.bj("#fff3f2f2")
+    //灰色
+  },{
+    an.bj("#ff68d2ff")
+    //蓝色
+  }
+}</onTextChanged></addTextChangedListener></Yu5Src></EditText><LinearLayout android:id="@+id/xxbj28" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#ff000000"/></LinearLayout><LinearLayout android:id="@+id/xxbj29" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><RelativeLayout android:id="@+id/xdbj1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center"><LinearLayout android:id="@+id/xxbj30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center"><TextView android:id="@+id/wb5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送验证码" android:textColor="#ff7a9eff" android:fontFamily="@font/system" android:visibility="visible"><Yu5Src><setOnClickListener><onClick>gj.xc(){
+  s email = st.bjk(zy.i.bjk4).zf() + "@qq.com"
+  s user = st.bjk(zy.i.bjk1).zf()
+  s pass = st.bjk(zy.i.bjk2).zf()
+  gj.jmxc(){
+    s an = st.wb(zy.i.wb5)
+    an.kjd("gone")
+  }
+  
+  rg email==""||user==""||pass==""
+  {
+    gj.jmxc(){
+      s an = st.wb(zy.i.wb5)
+      an.kjd("visible")
+      gj.ts("请填写账号、密码、邮箱！₍˄·͈༝·͈˄*₎◞ ̑̑")
+    }
+  },zf.cd(pass) &gt;= 8{
+    
+    //请求对象
+    s utf = "utf-8"
+    s zc = "{ \"username\": \"" + user + "\", \"password\": \"" + pass + "\", \"email\": \"" + email + "\" }"
+    //gj.sc(zc)
+    
+    s post_json = wl.hqjson(url+"/signup", zc, utf)
+    //gj.sc(post_json)
+    
+    //检测错误
+    rg post_json == null{
+      gj.jmxc(){
+        s an = st.wb(zy.i.wb5)
+        an.kjd("visible")
+        gj.ts("网络错误！")
+      }
+    },post_json ? "orproxy" || post_json ? "exists"{
+      gj.jmxc(){
+        s an = st.wb(zy.i.wb5)
+        an.kjd("visible")
+        gj.ts("邮箱已存在？可能吧")
+      }
+    },post_json ? "sent"{
+      code = zf.qc(post_json, "code\":\"", "\"")
+      cookie = zf.qc(post_json, "cookie\":\"", "\"")
+      //gj.sc(code)
+      gj.sc(cookie)
+      gj.jmxc(){
+        gj.ts("验证码已发送！未收到请重新进入")
+      }
+      //djs()
+    }
+  },{
+    gj.jmxc(){
+      s an = st.wb(zy.i.wb5)
+      an.kjd("visible")
+      gj.ts("密码长度未到8位！")
+    }
+  }
+}</onClick></setOnClickListener></Yu5Src></TextView></LinearLayout><LinearLayout android:id="@+id/xxbj31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center"><TextView android:id="@+id/wb8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/system" android:visibility="gone"/></LinearLayout></RelativeLayout></LinearLayout></LinearLayout><LinearLayout android:id="@+id/xxbj33" android:layout_width="325dp" android:layout_height="50dp" android:orientation="vertical" android:gravity="center" android:visibility="gone"><LinearLayout android:id="@+id/xxbj34" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><EditText android:id="@+id/bjk7" android:layout_width="315dp" android:layout_height="fill_parent" android:text="" android:hint="邀请码(选填)" android:background="#ffffffff" android:textCursorDrawable="@mipmap/txt1" android:inputType="textEmailAddress"/></LinearLayout><LinearLayout android:id="@+id/xxbj35" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#ff000000"/></LinearLayout><LinearLayout android:id="@+id/xxbj23" android:layout_width="325dp" android:layout_height="50dp" android:orientation="vertical" android:gravity="center"/><LinearLayout android:id="@+id/xxbj24" android:layout_width="325dp" android:layout_height="50dp" android:orientation="vertical" android:gravity="center"><androidx.cardview.widget.CardView android:id="@+id/kp3" android:layout_width="150dp" android:layout_height="40dp" app:cardCornerRadius="10dp" app:cardElevation="0dp"><LinearLayout android:id="@+id/xxbj25" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center" android:background="#ffe3e3e3"><TextView android:id="@+id/wb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册" android:textSize="15dp" android:fontFamily="@font/system" android:textColor="#ffffffff"/><Yu5Src><setOnClickListener><onClick>gj.xc(){
+  s user = st.bjk(zy.i.bjk1).zf()
+  s pass = st.bjk(zy.i.bjk2).zf()
+  s pass2 = st.bjk(zy.i.bjk3).zf()
+  s eamil = st.bjk(zy.i.bjk4).zf()
+  string codes = st.bjk(zy.i.bjk5).zf()
+  
+  s utf = "utf-8"
+  
+  rg user==""||pass==""||pass2==""||eamil==""||codes==""{
+    gj.jmxc(){
+      gj.ts("请填写所有内容！₍˄·͈༝·͈˄*₎◞ ̑̑")
+    }
+  },zf.cd(pass) &gt;= 8{
+      rg pass == pass2{
+        //申请注册
+        s zc = "{\"code\": \"" + codes + "\", \"cookie\": \"" + cookie + "\"}"
+        gj.sc(cookie)
+        s post_json = wl.hqjson(url+"/verify", zc, utf)
+        gj.sc(post_json)
+        
+        rg post_json ? "success"{
+          s a = "%Bomm/user.txt"
+          s b = "%Bomm/pass.txt"
+          wj.xrwb(a, user)
+          wj.xrwb(b, pass)
+          gj.jmxc(){
+            gj.ts("注册成功！")
+          }
+          gj.gb()
+        },post_json ? "session"{
+          gj.jmxc(){
+            gj.ts("不合法的请求")
+          }
+        },{
+          gj.jmxc(){
+            gj.ts("验证码错误喔！")
+          }
+        }
+        
+      },{
+        gj.jmxc(){
+          gj.ts("两次密码不匹配！")
+        }
+      }
+  },{
+    gj.jmxc(){
+      gj.ts("密码长度小于8位！")
+    }
+  }
+  
+}</onClick></setOnClickListener><setOnTouchListener><onTouch/></setOnTouchListener></Yu5Src></LinearLayout></androidx.cardview.widget.CardView></LinearLayout><LinearLayout android:id="@+id/xxbj18" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="bottom"><LinearLayout android:id="@+id/xxbj19" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal" android:gravity="center"><CheckBox android:id="@+id/dx1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:buttonTint="#ffff0000"><Yu5Src><setOnCheckedChangeListener><onCheckedChanged/></setOnCheckedChangeListener></Yu5Src></CheckBox><TextView android:id="@+id/wb6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我已阅读并同意" android:textColor="#ff000000" android:fontFamily="@font/system"/><TextView android:id="@+id/wb7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《波姆社条约》" android:textColor="#ffff0000" android:fontFamily="@font/system"><Yu5Src><setOnClickListener><onClick>gj.tz("liulanqi")</onClick></setOnClickListener><setOnTouchListener><onTouch/></setOnTouchListener></Yu5Src></TextView></LinearLayout></LinearLayout></LinearLayout></androidx.cardview.widget.CardView></LinearLayout></LinearLayout></androidx.cardview.widget.CardView></LinearLayout>

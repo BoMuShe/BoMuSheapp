@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/home_page_v" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="bottom">
+    <_Yu5Src><onCreate><onCreate>//载入事件内会加载布局，不使用该事件则不加载布局
+gj.jmxc()
+{
+  
+  s tx1 = st.tx(zy.i.sytb)
+  s tx2 = st.tx(zy.i.sctb)
+  s tx3 = st.tx(zy.i.sqtb)
+  s tx4 = st.tx(zy.i.wdtb)
+
+  s ls = "#ffdd4a4a"
+  s hs = ""
+  s hs1 = "#ff000000"
+  
+  tx1.zs(ls)
+  tx2.zs(hs)
+  tx3.zs(hs)
+  tx4.zs(hs)
+  
+  s wb1 = st.wb(zy.i.wbs1)
+  s wb2 = st.wb(zy.i.wbs2)
+  s wb3 = st.wb(zy.i.wbs3)
+  s wb4 = st.wb(zy.i.wbs4)
+  
+  wb1.zfys(ls)
+  wb2.zfys(hs1)
+  wb3.zfys(hs1)
+  wb4.zfys(hs1)
+  
+  s hdct = st.hdct(zy.i.hdct1)
+  s cts = { zysy.lei, shequn.lei, shichang.lei }
+  s ctt = { zy.b.zysy, zy.b.shequn, zy.b.shichang }
+  hdct.jm(cts, ctt)
+}
+</onCreate></onCreate><__layoutIsLoaded><__layoutIsLoaded/></__layoutIsLoaded><onStart><onStart/></onStart><onWindowFocusChanged><onWindowFocusChanged/></onWindowFocusChanged><iClass><iClass>qj i.runlibrary.app.v.v7lb$UserAdapter spq=null
+qj s hl=null</iClass></iClass><onDestroy><onDestroy/></onDestroy><onRestart><onRestart/></onRestart></_Yu5Src><androidx.drawerlayout.widget.DrawerLayout android:id="@+id/chct1" android:layout_width="match_parent" android:layout_height="match_parent"><RelativeLayout android:id="@+id/xdbj1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="bottom"><LinearLayout android:id="@+id/xxbj3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"><androidx.viewpager.widget.ViewPager android:id="@+id/hdct1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"><Yu5Src><setOnPageChangeListener><onPageSelected>s hdct = st.hdct(zy.i.hdct1)
+s jmxh = hdct.zsjm()
+s dhl = st.xxbj(zy.i.dbdhl)
+s cbl = st.chct(zy.i.chct1)
+s cbl_bool = cbl.sfdk("START")
+
+rg jmxh == 0{
+  rg cbl_bool == true{
+    dhl.kjd("gone")
+  }
+},{
+  dhl.kjd("visible")
+  cbl.gb("START")
+}
+
+
+rg jmxh == 0
+{
+  gj.jmxc()
+  {
+    s tx1 = st.tx(zy.i.sytb)
+    s tx2 = st.tx(zy.i.sctb)
+    s tx3 = st.tx(zy.i.sqtb)
+    s tx4 = st.tx(zy.i.wdtb)
+   
+    s ls = "#ffdd4a4a"
+    s hs = ""
+    s hs1 = "#ff000000"
+  
+    tx1.zs(ls)
+    tx2.zs(hs)
+    tx3.zs(hs)
+    tx4.zs(hs)
+  
+    s wb1 = st.wb(zy.i.wbs1)
+    s wb2 = st.wb(zy.i.wbs2)
+    s wb3 = st.wb(zy.i.wbs3)
+    s wb4 = st.wb(zy.i.wbs4)
+  
+    wb1.zfys(ls)
+    wb2.zfys(hs1)
+    wb3.zfys(hs1)
+    wb4.zfys(hs1)
+  }
+}
+rg jmxh == 1
+{
+  gj.jmxc()
+  {
+    s tx1 = st.tx(zy.i.sytb)
+    s tx2 = st.tx(zy.i.sctb)
+    s tx3 = st.tx(zy.i.sqtb)
+    s tx4 = st.tx(zy.i.wdtb)
+   
+    s ls = "#ffdd4a4a"
+    s hs = ""
+    s hs1 = "#ff000000"
+  
+    tx1.zs(hs)
+    tx2.zs(hs)
+    tx3.zs(ls)
+    tx4.zs(hs)
+  
+    s wb1 = st.wb(zy.i.wbs1)
+    s wb2 = st.wb(zy.i.wbs2)
+    s wb3 = st.wb(zy.i.wbs3)
+    s wb4 = st.wb(zy.i.wbs4)
+  
+    wb1.zfys(hs1)
+    wb2.zfys(hs1)
+    wb3.zfys(ls)
+    wb4.zfys(hs1)
+    }
+}
+rg jmxh == 2
+{
+  gj.jmxc()
+  {
+    s tx1 = st.tx(zy.i.sytb)
+    s tx2 = st.tx(zy.i.sctb)
+    s tx3 = st.tx(zy.i.sqtb)
+    s tx4 = st.tx(zy.i.wdtb)
+   
+    s ls = "#ffdd4a4a"
+    s hs = ""
+    s hs1 = "#ff000000"
+  
+    tx1.zs(hs)
+    tx2.zs(hs)
+    tx3.zs(hs)
+    tx4.zs(ls)
+  
+    s wb1 = st.wb(zy.i.wbs1)
+    s wb2 = st.wb(zy.i.wbs2)
+    s wb3 = st.wb(zy.i.wbs3)
+    s wb4 = st.wb(zy.i.wbs4)
+  
+    wb1.zfys(hs1)
+    wb2.zfys(hs1)
+    wb3.zfys(hs1)
+    wb4.zfys(ls)
+    }
+}</onPageSelected><onPageScrolled/></setOnPageChangeListener></Yu5Src></androidx.viewpager.widget.ViewPager></LinearLayout><LinearLayout android:id="@+id/xxbj2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="bottom"><LinearLayout android:id="@+id/dbdhl" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="vertical" android:gravity="bottom"><androidx.cardview.widget.CardView android:id="@+id/kp1" android:layout_width="fill_parent" android:layout_height="fill_parent"><LinearLayout android:id="@+id/xxbj4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:background="#FFEDEDED"><LinearLayout android:id="@+id/xxbj5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center"><ImageView android:id="@+id/sytb" android:layout_width="30dp" android:layout_height="30dp" android:src="@mipmap/sy"/><TextView android:id="@+id/wbs1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页" android:textSize="12dp" android:textColor="#ff000000" android:fontFamily="@font/system"/><Yu5Src><setOnClickListener><onClick>gj.jmxc()
+{
+  s tx1 = st.tx(zy.i.sytb)
+  s tx2 = st.tx(zy.i.sctb)
+  s tx3 = st.tx(zy.i.sqtb)
+  s tx4 = st.tx(zy.i.wdtb)
+
+  s ls = "#ffdd4a4a"
+  s hs = ""
+  s hs1 = "#ff000000"
+  
+  tx1.zs(ls)
+  tx2.zs(hs)
+  tx3.zs(hs)
+  tx4.zs(hs)
+  
+  s wb1 = st.wb(zy.i.wbs1)
+  s wb2 = st.wb(zy.i.wbs2)
+  s wb3 = st.wb(zy.i.wbs3)
+  s wb4 = st.wb(zy.i.wbs4)
+  
+  wb1.zfys(ls)
+  wb2.zfys(hs1)
+  wb3.zfys(hs1)
+  wb4.zfys(hs1)
+  
+  s hdct = st.hdct(zy.i.hdct1)
+  hdct.zsjm(0)
+}</onClick></setOnClickListener></Yu5Src></LinearLayout><LinearLayout android:id="@+id/xxbj6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center" android:visibility="gone"><ImageView android:id="@+id/sctb" android:layout_width="30dp" android:layout_height="30dp" android:src="@mipmap/fl"/><TextView android:id="@+id/wbs2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="组队" android:textSize="12dp" android:textColor="#ff000000" android:fontFamily="@font/system"/><Yu5Src><setOnClickListener><onClick>gj.jmxc()
+{
+  s tx1 = st.tx(zy.i.sytb)
+  s tx2 = st.tx(zy.i.sctb)
+  s tx3 = st.tx(zy.i.sqtb)
+  s tx4 = st.tx(zy.i.wdtb)
+
+  s ls = "#ffdd4a4a"
+  s hs = ""
+  s hs1 = "#ff000000"
+  
+  tx1.zs(hs)
+  tx2.zs(ls)
+  tx3.zs(hs)
+  tx4.zs(hs)
+  
+  s wb1 = st.wb(zy.i.wbs1)
+  s wb2 = st.wb(zy.i.wbs2)
+  s wb3 = st.wb(zy.i.wbs3)
+  s wb4 = st.wb(zy.i.wbs4)
+  
+  wb1.zfys(hs1)
+  wb2.zfys(ls)
+  wb3.zfys(hs1)
+  wb4.zfys(hs1)
+  
+  s hdct = st.hdct(zy.i.hdct1)
+  hdct.zsjm(1)
+  
+ }</onClick></setOnClickListener></Yu5Src></LinearLayout><LinearLayout android:id="@+id/xxbj7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center"><ImageView android:id="@+id/sqtb" android:layout_width="30dp" android:layout_height="30dp" android:src="@mipmap/hy"/><TextView android:id="@+id/wbs3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="社群" android:textSize="12dp" android:textColor="#ff000000" android:fontFamily="@font/system"/><Yu5Src><setOnClickListener><onClick>gj.jmxc()
+{
+  s tx1 = st.tx(zy.i.sytb)
+  s tx2 = st.tx(zy.i.sctb)
+  s tx3 = st.tx(zy.i.sqtb)
+  s tx4 = st.tx(zy.i.wdtb)
+
+  s ls = "#ffdd4a4a"
+  s hs = ""
+  s hs1 = "#ff000000"
+  
+  tx1.zs(hs)
+  tx2.zs(hs)
+  tx3.zs(ls)
+  tx4.zs(hs)
+  
+  s wb1 = st.wb(zy.i.wbs1)
+  s wb2 = st.wb(zy.i.wbs2)
+  s wb3 = st.wb(zy.i.wbs3)
+  s wb4 = st.wb(zy.i.wbs4)
+  
+  wb1.zfys(hs1)
+  wb2.zfys(hs1)
+  wb3.zfys(ls)
+  wb4.zfys(hs1)
+  
+  s hdct = st.hdct(zy.i.hdct1)
+  hdct.zsjm(1)
+}</onClick></setOnClickListener></Yu5Src></LinearLayout><LinearLayout android:id="@+id/xxbj8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center"><ImageView android:id="@+id/wdtb" android:layout_width="30dp" android:layout_height="30dp" android:src="@mipmap/wd"/><TextView android:id="@+id/wbs4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="市场" android:textSize="12dp" android:textColor="#ff000000" android:fontFamily="@font/system"/><Yu5Src><setOnClickListener><onClick>gj.jmxc()
+{
+  s tx1 = st.tx(zy.i.sytb)
+  s tx2 = st.tx(zy.i.sctb)
+  s tx3 = st.tx(zy.i.sqtb)
+  s tx4 = st.tx(zy.i.wdtb)
+
+  s ls = "#ffdd4a4a"
+  s hs = ""
+  s hs1 = "#ff000000"
+  
+  tx1.zs(hs)
+  tx2.zs(hs)
+  tx3.zs(hs)
+  tx4.zs(ls)
+  
+  s wb1 = st.wb(zy.i.wbs1)
+  s wb2 = st.wb(zy.i.wbs2)
+  s wb3 = st.wb(zy.i.wbs3)
+  s wb4 = st.wb(zy.i.wbs4)
+  
+  wb1.zfys(hs1)
+  wb2.zfys(hs1)
+  wb3.zfys(hs1)
+  wb4.zfys(ls)
+  
+  s hdct = st.hdct(zy.i.hdct1)
+  hdct.zsjm(2)
+}</onClick></setOnClickListener></Yu5Src></LinearLayout></LinearLayout></androidx.cardview.widget.CardView></LinearLayout></LinearLayout></RelativeLayout><LinearLayout android:id="@+id/cbl" android:layout_width="300dp" android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="left"><androidx.cardview.widget.CardView android:id="@+id/kp2" android:layout_width="fill_parent" android:layout_height="fill_parent"><ScrollView android:id="@+id/gd1" android:layout_width="fill_parent" android:layout_height="fill_parent"><LinearLayout android:id="@+id/xxbj1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"><LinearLayout android:id="@+id/xxbj9" android:layout_width="fill_parent" android:layout_height="200dp" android:orientation="vertical"><LinearLayout android:id="@+id/xxbj12" android:layout_width="fill_parent" android:layout_height="5dp" android:orientation="vertical"/><LinearLayout android:id="@+id/xxbj10" android:layout_width="fill_parent" android:layout_height="150dp" android:orientation="vertical" android:gravity="center"><androidx.cardview.widget.CardView android:id="@+id/kp3" android:layout_width="100dp" android:layout_height="100dp" app:cardCornerRadius="50dp"><LinearLayout android:id="@+id/xxbj36" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"><ImageView android:id="@+id/tx8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/i"/></LinearLayout></androidx.cardview.widget.CardView></LinearLayout><LinearLayout android:id="@+id/xxbj11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_horizontal"><TextView android:id="@+id/wb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名字" android:textColor="#ff000000" android:textSize="15dp" android:fontFamily="@font/system"/></LinearLayout></LinearLayout><LinearLayout android:id="@+id/xxbj37" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj38" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#fff6f6f6"/></LinearLayout><LinearLayout android:id="@+id/xxbj14" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal"><LinearLayout android:id="@+id/xxbj15" android:layout_width="80dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx1" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/i"/></LinearLayout><LinearLayout android:id="@+id/xxbj16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical"><TextView android:id="@+id/wb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人主页" android:textColor="#ff000000" android:fontFamily="@font/system"/><Yu5Src><setOnClickListener><onClick/></setOnClickListener></Yu5Src></LinearLayout><Yu5Src><setOnClickListener><onClick>gj.tz("gerenzhuye")</onClick></setOnClickListener></Yu5Src></LinearLayout><LinearLayout android:id="@+id/xxbj39" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj40" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#fff6f6f6"/></LinearLayout><LinearLayout android:id="@+id/xxbj17" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal"><LinearLayout android:id="@+id/xxbj18" android:layout_width="80dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx2" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/i"/></LinearLayout><LinearLayout android:id="@+id/xxbj19" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical"><TextView android:id="@+id/wb3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的收藏" android:textColor="#ff000000" android:fontFamily="@font/system"/></LinearLayout></LinearLayout><LinearLayout android:id="@+id/xxbj41" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj42" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#fff6f6f6"/></LinearLayout><LinearLayout android:id="@+id/xxbj20" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal"><LinearLayout android:id="@+id/xxbj21" android:layout_width="80dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx3" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/i"/></LinearLayout><LinearLayout android:id="@+id/xxbj22" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical"><TextView android:id="@+id/wb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="浏览历史" android:textColor="#ff000000" android:fontFamily="@font/system"/></LinearLayout></LinearLayout><LinearLayout android:id="@+id/xxbj43" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj44" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#fff6f6f6"/></LinearLayout><LinearLayout android:id="@+id/xxbj24" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal"><LinearLayout android:id="@+id/xxbj25" android:layout_width="80dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx4" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/i"/></LinearLayout><LinearLayout android:id="@+id/xxbj26" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical"><TextView android:id="@+id/wb5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的邀请码" android:textColor="#ff000000" android:fontFamily="@font/system"/></LinearLayout></LinearLayout><LinearLayout android:id="@+id/xxbj45" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj46" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#fff6f6f6"/></LinearLayout><LinearLayout android:id="@+id/xxbj27" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal"><LinearLayout android:id="@+id/xxbj28" android:layout_width="80dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx5" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/i"/></LinearLayout><LinearLayout android:id="@+id/xxbj29" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical"><TextView android:id="@+id/wb6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="积分商城" android:textColor="#ff000000" android:fontFamily="@font/system"/></LinearLayout></LinearLayout><LinearLayout android:id="@+id/xxbj47" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj48" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#fff6f6f6"/></LinearLayout><LinearLayout android:id="@+id/xxbj30" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal"><LinearLayout android:id="@+id/xxbj31" android:layout_width="80dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx6" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/i"/></LinearLayout><LinearLayout android:id="@+id/xxbj32" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical"><TextView android:id="@+id/wb7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BUG反馈" android:textColor="#ff000000" android:fontFamily="@font/system"/></LinearLayout><Yu5Src><setOnClickListener><onClick>wl.fw("https://jq.qq.com/?_wv=1027&amp;k=hvGnJ8x2")</onClick></setOnClickListener></Yu5Src></LinearLayout><LinearLayout android:id="@+id/xxbj49" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj50" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#fff6f6f6"/></LinearLayout><LinearLayout android:id="@+id/xxbj33" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal"><LinearLayout android:id="@+id/xxbj34" android:layout_width="80dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx7" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/i"/></LinearLayout><LinearLayout android:id="@+id/xxbj35" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical"><TextView android:id="@+id/wb8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" android:textColor="#ff000000" android:fontFamily="@font/system"/></LinearLayout></LinearLayout><LinearLayout android:id="@+id/xxbj51" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:gravity="center"><LinearLayout android:id="@+id/xxbj52" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#fff6f6f6"/></LinearLayout></LinearLayout></ScrollView></androidx.cardview.widget.CardView></LinearLayout></androidx.drawerlayout.widget.DrawerLayout></LinearLayout>

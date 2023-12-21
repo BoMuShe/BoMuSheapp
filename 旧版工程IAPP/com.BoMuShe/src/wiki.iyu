@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/wiki_v" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <_Yu5Src><onCreate><onCreate>s gjl = st.gjlbj(zy.i.gjlbj1)
+gjl.gjl()
+s llq = st.llq(zy.i.llq1)
+llq.csh()
+llq.zrwz("https://wiki.biligame.com/toramonline/%E9%A6%96%E9%A1%B5")
+</onCreate></onCreate></_Yu5Src><androidx.appcompat.widget.Toolbar android:id="@+id/gjlbj1" android:layout_width="match_parent" android:layout_height="wrap_content"/><WebView android:id="@+id/llq1" android:layout_width="wrap_content" android:layout_height="wrap_content"><Yu5Src><setWebViewClient><shouldOverrideUrlLoading/></setWebViewClient><setWebChromeClient><onProgressChanged>s http = st.llq(zy.i.llq1)
+s https = http.wz()
+gj.sc(https)
+s urls = "bilibili://game_center/home_wiki?sourceFrom=400004&amp;nextLink=https%3A%2F%2Fwiki.biligame.com%2Ftoramonline%2F%25E9%25A6%2596%25E9%25A1%25B5&amp;"
+s urls2 = "bilibili://game_center/home_wiki?sourceFrom=400004&amp;nextLink=https%3A%2F%2Fwiki.biligame.com%2Ftoramonline%2F%25E5%259C%25B0%25E5%259B%25BE&amp;"
+rg https == urls || https == urls2{
+  http.zrwz("https://wiki.biligame.com/toramonline/%E9%A6%96%E9%A1%B5")
+}</onProgressChanged></setWebChromeClient></Yu5Src></WebView></LinearLayout>

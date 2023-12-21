@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_v" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="center" android:background="#ff9ec5e3">
+    <_Yu5Src><onCreate><onCreate>//载入事件内会加载布局，不使用该事件则不加载布局
+gj.xc()
+{
+  s sjs = zf.sjs(1, 8)
+  rg sjs == 1{
+    s wb = st.wb(zy.i.wb2)
+    wb.zf("tips：梦拉梦拉，一只梦拉！")
+  },sjs == 2{
+    s wb = st.wb(zy.i.wb2)
+    wb.zf("tips：遇到问题？可以反馈！")
+  },sjs == 3{
+    s wb = st.wb(zy.i.wb2)
+    wb.zf("tips：你想偷走板子然后放在公会酒馆？")
+  },sjs == 4{
+    s wb = st.wb(zy.i.wb2)
+    wb.zf("tips：什么！原型又降价了？")
+  },sjs == 5{
+    s wb = st.wb(zy.i.wb2)
+    wb.zf("tips：总是有人装萌新，我不说是谁")
+  },sjs == 6{
+    s wb = st.wb(zy.i.wb2)
+    wb.zf("tips：高沙都没人买了？")
+  },sjs == 7{
+    s wb = st.wb(zy.i.wb2)
+    wb.zf("tips：玩托拉姆成了经济学家？")
+  },sjs == 8{
+    s wb = st.wb(zy.i.wb2)
+    wb.zf("tips：什么词可以让你回忆起以前的托拉姆？")
+  }
+  
+  
+  
+}</onCreate></onCreate><__layoutIsLoaded><__layoutIsLoaded>gj.xc(){
+  //判断网络,进行文件解压和判断
+  s wifi = wl.hq("http://www.baidu.com", "utf-8")
+  CheckFileExists()
+  //本地解压
+  s gmlzip = "%Bomm/Bomm.zip"
+  s true_wj = wj.cz(gmlzip)
+  rg true_wj == false{
+    s zip = "@Bomm.zip"
+    s lj = "%Bomm/"
+    
+    wj.fz(zip, "%Bomm/Bomm.zip", true)
+    s c = wj.jy(gmlzip, lj, true)
+  }
+  rg wifi == null{
+    gj.jmxc(){
+      gj.ts("无法连接服务器")
+      gj.ts("已跳转至离线模式")
+    }
+    gj.zt(3000)
+    gj.tz(gongju.lei)
+  },{
+    s url = ""
+    s mqbb = "1.0"
+    rg mqbb == "1.0"{
+      gj.zt(1000)
+      gj.jmxc(){
+        
+        gj.tz(log_in.lei)
+        //gj.tz(gongju.lei)
+        //gj.tz(zaixianfankuibug.lei)
+        //gj.tz(shengjiluxian.lei)
+        gj.gb()
+      }
+    }
+  }
+}</__layoutIsLoaded></__layoutIsLoaded><onKeyUp><onKeyUp/></onKeyUp><iClass><iClass>ff string CheckFileExists(){
+  string[] Flies = {
+    "%Bomm/liaoli.txt",
+    "%Bomm/BOSS3.txt"
+  }
+  s list_Num = Flies.length
+  s Num_T = 0
+  xh int a = 0, a &lt; list_Num, a++{
+    s TrueAndFalse = wj.cz(Flies[a])
+    rg TrueAndFalse{
+      Num_T++
+    }
+  }
+  fh Num_T
+}
+</iClass></iClass><onWindowFocusChanged><onWindowFocusChanged>
+
+</onWindowFocusChanged></onWindowFocusChanged><onRestart><onRestart/></onRestart></_Yu5Src><RelativeLayout android:id="@+id/xdbj1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center"><LinearLayout android:id="@+id/xxbj1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center" android:layout_gravity="center"><ImageView android:id="@+id/tx1" android:layout_width="145dp" android:layout_height="145dp" android:src="@mipmap/bdm2"/><LinearLayout android:id="@+id/xxbj2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center"><TextView android:id="@+id/wb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tips：梦拉梦拉，一只梦拉！" android:fontFamily="@font/system" android:gravity="center"/><ProgressBar android:id="@+id/jdt1" android:layout_width="50dp" android:layout_height="50dp" android:src="@mipmap/loading" android:animationResolution="25"/></LinearLayout><Yu5Src><setOnClickListener><onClick/></setOnClickListener></Yu5Src></LinearLayout></RelativeLayout></LinearLayout>

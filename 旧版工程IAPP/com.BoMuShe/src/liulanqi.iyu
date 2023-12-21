@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/_lanqi_v" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <_Yu5Src><onCreate><onCreate>//载入事件内会加载布局，不使用该事件则不加载布局
+s llq = st.llq(zy.i.llq1)
+s html = "%Bomm/help.html"
+
+wj.fz("@assets/help.html", "%Bomm", true)
+
+llq.zrwz(html)
+
+s js = llq.st.getSettings()
+js.setBuiltInZoomControls(false)
+js.setDisplayZoomControls(false)
+js.setSupportZoom(false)
+</onCreate></onCreate></_Yu5Src><LinearLayout android:id="@+id/xxbj1" android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal" android:background="#ff535353"><LinearLayout android:id="@+id/xxbj3" android:layout_width="50dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx1" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/fanhui"><Yu5Src><setOnClickListener><onClick>gj.gb()</onClick></setOnClickListener></Yu5Src></ImageView></LinearLayout><LinearLayout android:id="@+id/xxbj4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center_vertical"><TextView android:id="@+id/wb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="波姆社使用文档" android:textColor="#ffffffff" android:textSize="18dp"/></LinearLayout></LinearLayout><LinearLayout android:id="@+id/xxbj2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="1"><WebView android:id="@+id/llq1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"/></LinearLayout></LinearLayout>

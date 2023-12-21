@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/shengjiluxian_v" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <_Yu5Src><onCreate><onCreate>//载入事件内会加载布局，不使用该事件则不加载布局
+</onCreate></onCreate><iClass><iClass>string[] up_text_one = {}
+string up_text_two = ""
+string[] up_text = {}
+
+string boss_name = ""
+string sx = ""
+string map = ""
+string boss_lv = ""
+string exp = ""
+
+string yw_dd = ""
+/*
+```markdown
+# insertAndSort方法的使用文档
+
+## 方法描述
+insertAndSort方法是一个Java方法，它的功能是将一个字符串数组a插入到一个二维字符串数组b中，并按照每个子数组的第三个元素的字典序降序排序，然后返回一个新的二维字符串数组c。
+
+## 参数说明
+- a: 一个长度为4的字符串数组，表示要插入到b中的元素。如果a为null或长度不为4，则不进行插入操作，直接返回b。
+- b: 一个二维字符串数组，表示已有的元素集合。每个子数组的长度也应该为4。如果b为null，则返回一个只包含a的二维字符串数组。
+
+## 返回值说明
+- c: 一个二维字符串数组，表示插入和排序后的结果。c的长度为b的长度加一，每个子数组的长度为4。c按照每个子数组的第三个元素的字典序降序排序。
+
+## 示例代码
+```java
+// 创建一个字符串数组a
+String[] a = {"name3", "sx", "map", "1", "o"};
+// 创建一个二维字符串数组b
+String[][] b = {{"name", "sx", "map", "2", "o"}, {"name2", "sx", "map", "9", "o"}};
+// 调用insertAndSort方法，将a插入到b中，并按照每个子数组的第三个元素从大到小排序
+String[][] c = insertAndSort(a, b);
+// 打印c的内容
+for (int i = 0; i &lt; c.length; i++) {
+for (int j = 0; j &lt; 4; j++) {
+System.out.print(c[i][j] + " ");
+}
+System.out.println();
+}
+```
+## 输出结果
+```
+name2 sx map 9 o
+name sx map 2 o
+name3 sx map 1 o
+```
+```
+*/
+
+/*
+def isInRange(x, a, b):
+return a &lt;= x and x &lt;= b
+
+def isInTwoRanges(a, b):
+return isInRange(b, a-9, a+9) and isInRange(b, a, a+9)
+
+a = int(input("请输入一个整数: "))
+b = int(input("请输入另一个整数: "))
+if isInTwoRanges(a, b):
+print("存在此区间！")
+else:
+print("不存在此区间！")
+
+
+```java
+import java.util.Scanner;
+
+public class Main {
+public static boolean isInRange(int x, int a, int b) {
+return a &lt;= x &amp;&amp; x &lt;= b ? true : false;
+}
+
+public static boolean isInTwoRanges(int a, int b) {
+return isInRange(b, a-9, a+9) &amp;&amp; isInRange(b, a, a+9);
+}
+
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("请输入两个整数: ");
+int a = sc.nextInt();
+int b = sc.nextInt();
+if (isInTwoRanges(a, b)) {
+System.out.println("存在此区间！");
+} else {
+System.out.println("不存在此区间！");
+}
+}
+}
+```
+public static boolean isInInterval(int a, int x) {
+// a是区间的中点，x是要检查的参数
+// 如果x在a-9到a+9之间，返回true，否则返回false
+return x &gt;= a - 9 &amp;&amp; x &lt;= a + 9;
+}
+
+
+//|(replace[玩家等级-boss等级)]|＊boss经验 .[[0-5]=11,6=10,7=9,8=7,9=3,10=1]
+
+狮虎今天感觉好凶,是不是累了www
+*/
+
+
+ff boolean isInTwoRanges(int a, int x){
+  rg a != "" || x != ""{
+    fh x &gt;= a - 9 &amp;&amp; x &lt;= a + 9
+  },{
+    fh false
+  }
+}
+
+ff string calculate(int a, int b, int exp){
+  int c = a -b
+  rg c &lt; 0 {
+    c = -c
+  }
+  int d = 0
+  rg c &lt;= 5{
+    d = 11
+  },c == 6{
+    d = 10
+  },c == 7{
+    d = 9
+  },c == 8{
+    d = 7
+  },c == 9{
+    d = 3
+  },c == 10{
+    d = 1
+  }
+  fh d * exp
+}
+
+/*
+好的，这是使用Java编写的代码：
+
+public static int calculate(int a, int b, int boss) {
+int c = a - b;
+if (c &lt; 0) {
+c = -c;
+}
+int d = 0;
+if (c == 0 || c == 5) {
+d = 11;
+} else if (c == 6) {
+d = 10;
+} else if (c == 7) {
+d = 9;
+} else if (c == 8) {
+d = 7;
+} else if (c == 9) {
+d = 3;
+} else if (c == 10) {
+d = 1;
+}
+return d * boss;
+}
+你在拆包?
+```
+
+这个方法与之前的Python方法非常相似。它接受三个参数，a和b是两个整数，boss是一个整数。它计算a-b的值并将其存储在变量c中。如果c是负数，则将其转换为正数。然后，根据c的值，将d变量设置为11、10、9、7、3或1。最后，它返回d * boss的结果。
+
+希望这可以帮到你。如果你有任何其他问题，请告诉我。
+*/
+ff hqlbsx(){
+  gj.xc(){
+    //读取txt文件,存入boss变量中
+    s boss = wj.dqwb("%Bomm/BOSS3.txt")
+    //获取编辑框1的对象
+    s dl = st.bjk(zy.i.bjk1)
+    //创建名为boss2的字符串数组
+    string[] boss2 = {}
+    
+    //将boss的字符串文本进行分割,存入boss2变量中
+    boss2 = zf.fg(boss, "¥")
+    //将boss2变量转入全局变量up_text_one中
+    up_text_one = boss2
+    
+    //创建线程
+    gj.jmxc(){
+      //获取全局变量up_text_one数组长度并存入len变量中
+      s len = up_text_one.length - 1
+      
+      //获取v7列表对象对象
+      s tzlb = st.v7lb(zy.i.v7lb1)
+      s lbmb = tzlb.v7lbspq(shengjimuban.lei, zy.b.shengjimuban)
+      s ids = { zy.i.boss, zy.i.sx, zy.i.map, zy.i.boss_lv, zy.i.exp }
+      
+      
+      xh s i=0, i&lt;len, i++{
+        up_text_two = up_text_one[i]
+        // gj.sc(up_text_two)
+        
+        rg up_text_two != "" || up_text_two != null{
+          
+          up_text = zf.fg(up_text_two, ";")
+          /*
+          gj.sc(up_text[0])
+          gj.sc(up_text[1])
+          gj.sc(up_text[2])
+          gj.sc(up_text[3])
+          gj.sc(up_text[4])
+          */
+          boss_name = zf.th(zf.qctwkg(up_text[0]), " ", "")
+          sx = up_text[1]
+          map = up_text[2]
+          boss_lv = up_text[3]
+          exp = up_text[4]
+          
+          //gj.sc(boss_name)
+          
+          s values = { boss_name, sx, map, boss_lv, exp }
+          lbmb.j(ids, values)
+          lbmb.sx()
+          
+        }
+      }
+    }
+  }
+}
+
+/*
+如果你想用Java写一个方法，不使用任何库和函数，往字符串数组里的最后面添加字符串数组，返回二维数组，你可以参考以下代码：
+
+```java
+public static String[][] addArray(String[] arr, String[] arr2) {
+//创建一个二维数组，长度等于原数组和要添加的数组的和
+String[][] result = new String[arr.length + arr2.length][];
+//把原数组的每个元素复制到二维数组的第一列
+for (int i = 0; i &lt; arr.length; i++) {
+result[i] = new String[]{arr[i]};
+}
+//把要添加的数组的每个元素复制到二维数组的后面
+for (int i = 0; i &lt; arr2.length; i++) {
+result[arr.length + i] = new String[]{arr2[i]};
+}
+//返回二维数组
+return result;
+}
+```
+*/</iClass></iClass><__layoutIsLoaded><__layoutIsLoaded>hqlbsx()
+
+</__layoutIsLoaded></__layoutIsLoaded><onDestroy><onDestroy/></onDestroy><onWindowFocusChanged><onWindowFocusChanged/></onWindowFocusChanged><onKeyDown><onKeyDown/></onKeyDown></_Yu5Src><androidx.cardview.widget.CardView android:id="@+id/kp1" android:layout_width="fill_parent" android:layout_height="50dp" app:cardCornerRadius="0dp" app:cardBackgroundColor="#ff00b3ff"><LinearLayout android:id="@+id/xxbj3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal"><LinearLayout android:id="@+id/xxbj4" android:layout_width="50dp" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx1" android:layout_width="25dp" android:layout_height="30dp" android:src="@mipmap/fanhui"><Yu5Src><setOnClickListener><onClick>gj.gb()</onClick></setOnClickListener></Yu5Src></ImageView></LinearLayout><LinearLayout android:id="@+id/xxbj5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_vertical" android:layout_weight="1"><TextView android:id="@+id/wb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="升级路线" android:textSize="20sp" android:textColor="#ffffffff" android:fontFamily="@font/system"/></LinearLayout><LinearLayout android:id="@+id/xxbj7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:layout_weight="1" android:gravity="center_vertical|right"><androidx.cardview.widget.CardView android:id="@+id/kp5" android:layout_width="60dp" android:layout_height="25dp" android:layout_marginRight="5dp" android:visibility="visible"><LinearLayout android:id="@+id/xxbj12" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center" android:background="?android:attr/selectableItemBackground"><TextView android:id="@+id/wb3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无"/><Yu5Src><setOnClickListener><onClick>gj.jmxc(){
+  s ids = {0, 1, 2, 3, 4, 5, 6}
+  s names = {"无", "火", "水", "暗", "光", "风", "地"}
+  s cd = st.tccd(true, zy.i.xxbj12, ids, names)(mi){
+    s wb = st.wb(zy.i.wb3)
+    s cds = mi.getItemId()
+    rg cds == 0{
+      wb.zf("无")
+    }, cds == 1{
+      wb.zf("火")
+    }, cds == 2{
+      wb.zf("水")
+    }, cds == 3{
+      wb.zf("暗")
+    }, cds == 4{
+      wb.zf("光")
+    }, cds == 5{
+      wb.zf("风")
+    }, cds == 6{
+      wb.zf("地")
+    }
+    fh fou
+  }
+}
+</onClick></setOnClickListener></Yu5Src></LinearLayout></androidx.cardview.widget.CardView><androidx.cardview.widget.CardView android:id="@+id/kp6" android:layout_width="60dp" android:layout_height="25dp" android:layout_marginRight="5dp"><LinearLayout android:id="@+id/xxbj13" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center" android:background="?android:attr/selectableItemBackground"><TextView android:id="@+id/wb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无要求"/><Yu5Src><setOnClickListener><onClick>gj.jmxc(){
+  s ids = {0, 1, 2}
+  s names = {"无要求", "野王", "定点"}
+  s cd = st.tccd(true, zy.i.xxbj12, ids, names)(mi){
+    s wb = st.wb(zy.i.wb4)
+    s cds = mi.getItemId()
+    rg cds == 0{
+      wb.zf("无要求")
+      yw_dd = ""
+    }, cds == 1{
+      wb.zf("野王")
+      yw_dd = "野王"
+    }, cds == 2{
+      wb.zf("定点")
+      yw_dd = "星"
+    }
+    fh fou
+  }
+}
+</onClick></setOnClickListener></Yu5Src></LinearLayout></androidx.cardview.widget.CardView></LinearLayout></LinearLayout></androidx.cardview.widget.CardView><androidx.cardview.widget.CardView android:id="@+id/kp2" android:layout_width="fill_parent" android:layout_height="45dp" app:cardCornerRadius="0dp"><LinearLayout android:id="@+id/xxbj1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:gravity="center"><LinearLayout android:id="@+id/xxbj10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="bottom"><EditText android:id="@+id/bjk1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:gravity="center" android:background="#00000000" android:hint="请输入你当前的等级" android:layout_marginTop="5dp" android:inputType="number" android:textSize="15sp" android:layout_weight="1"><Yu5Src><addTextChangedListener><onTextChanged/><beforeTextChanged/><afterTextChanged/></addTextChangedListener><setOnFocusChangeListener><onFocusChange/></setOnFocusChangeListener><setOnEditorActionListener><onEditorAction/></setOnEditorActionListener><setOnClickListener><onClick/></setOnClickListener></Yu5Src></EditText><LinearLayout android:id="@+id/xxbj2" android:layout_width="fill_parent" android:layout_height="1dp" android:orientation="vertical" android:background="#ff000000" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp"/></LinearLayout><LinearLayout android:id="@+id/xxbj8" android:layout_width="80dp" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center"><Yu5Src><setOnClickListener><onClick/></setOnClickListener></Yu5Src><androidx.cardview.widget.CardView android:id="@+id/kp4" android:layout_width="70dp" android:layout_height="35dp" app:cardCornerRadius="5dp" app:cardBackgroundColor="#ffe8faff" app:cardElevation="1dp"><LinearLayout android:id="@+id/xxbj11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center" android:background="?android:attr/selectableItemBackground"><TextView android:id="@+id/wb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查询" android:textColor="#ff000000" android:textSize="15sp"/><Yu5Src><setOnClickListener><onClick>s nr = st.bjk(zy.i.bjk1)
+rg nr.zf() != ""{
+  gj.xc(){
+    //读取txt文件,存入boss变量中
+    s boss = wj.dqwb("%Bomm/BOSS3.txt")
+    
+    //创建名为boss2的字符串数组
+    string[] boss2 = {}
+    
+    //将boss的字符串文本进行分割,存入boss2变量中
+    boss2 = zf.fg(boss, "¥")
+    //将boss2变量转入全局变量up_text_one中
+    up_text_one = boss2
+    
+    //创建线程
+    gj.jmxc(){
+      int qda = 0
+      s bczlb = st.tx(zy.i.tx3)
+      
+      wj.xrwb("/storage/emulated/0/Bomm/temp.txt", "", "utf-8")
+      
+      //获取编辑框1的对象
+      s dl = st.bjk(zy.i.bjk1)
+      
+      //获取全局变量up_text_one数组长度并存入len变量中
+      s len = up_text_one.length - 1
+      
+      //获取v7列表对象对象
+      s tzlb = st.v7lb(zy.i.v7lb1)
+      s lbmb = tzlb.v7lbspq(shengjimuban.lei, zy.b.shengjimuban)
+      s ids = { zy.i.boss, zy.i.sx, zy.i.map, zy.i.boss_lv, zy.i.exp }
+      
+      s js_p = 0
+      string[] ewsz = {}
+      xh s i=0, i&lt;len, i++{
+        
+        s temp = wj.dqwb("/storage/emulated/0/Bomm/temp.txt", "utf-8")
+        
+        up_text_two = up_text_one[i]
+        
+        // gj.(up_text_two)
+        
+        up_text = zf.fg(up_text_two, ";")
+        
+        /*
+        s len_dl = dl.zf()
+        rg len_dl.length() &gt;= 2{
+        s Zore_01 = zf.zzbds(dl.zf(), "[0-2]", 0)
+        gj.sc(Zore_01.zf())
+        }
+        */
+        
+        
+        rg isInTwoRanges(dl.zf(), up_text[3]){
+          qda = 1
+          
+          //将用户等级±9区间内的值存入
+          boss_name = zf.th(zf.qctwkg(up_text[0]), " ", "")
+          sx = up_text[1]
+          map = up_text[2]
+          
+          //带入倍率算法计算经验
+          //|(replace[玩家等级-boss等级)]|＊boss经验 .[[0-5]=11,6=10,7=9,8=7,9=3,10=1]
+          s boss_lv = up_text[3]
+          s exp_true = calculate(dl.zf(), boss_lv, up_text[4])
+          
+          
+          
+          //gj.(dl_zf + 1)添加数据
+          s value = {boss_name, sx, map, boss_lv, exp_true}
+          
+          s values = zf.qctwkg(wj.dqwb("/storage/emulated/0/Bomm/temp.txt", "utf-8"))
+          s gkd = values + boss_name + ";" + sx + ";" + map + ";" + boss_lv + ";" + exp_true + "¥"
+          wj.xrwb("/storage/emulated/0/Bomm/temp.txt", gkd, "utf-8")
+          
+          
+          /*
+          java{
+          string[] arrays_paixu = arrays.insertAndSort(values, array_y);
+          System.out.print(arrays_paixu[0]);
+          }
+          */
+          //处理排序
+          
+        }
+        rg qda == 0{
+          bczlb.kjd("visible")
+        },{
+          bczlb.kjd("gone")
+          java{
+            new temp_shengji().temps();
+          }
+          js_p = 1
+          
+        }
+      }
+      rg js_p == 1{
+        gj.xc(){
+          //读取txt文件,存入boss变量中
+          s boss = wj.dqwb("/storage/emulated/0/Bomm/tempSorted.txt")
+          
+          //创建名为boss2的字符串数组
+          string[] boss2 = {}
+          
+          //将boss的字符串文本进行分割,存入boss2变量中
+          boss2 = zf.fg(boss, "¥")
+          //将boss2变量转入全局变量up_text_one中
+          up_text_one = boss2
+          
+          //创建线程
+          gj.jmxc(){
+            //获取编辑框1的对象
+            s dl = st.wb(zy.i.wb4).zf()
+            s sxl = st.wb(zy.i.wb3).zf()
+            
+            //获取全局变量up_text_one数组长度并存入len变量中
+            s len = up_text_one.length - 1
+            
+            //获取v7列表对象对象
+            s tzlb = st.v7lb(zy.i.v7lb1)
+            s lbmb = tzlb.v7lbspq(shengjimuban.lei, zy.b.shengjimuban)
+            s ids = { zy.i.boss, zy.i.sx, zy.i.map, zy.i.boss_lv, zy.i.exp }
+            
+            string[] ewsz = {}
+            
+            rg sxl == "无" {
+              /////////////////////////////////////
+              rg dl == "野王"{
+                xh s i=0, i&lt;len, i++{
+                  up_text_two = up_text_one[i]
+                  
+                  // gj.(up_text_two)
+                  
+                  up_text = zf.fg(up_text_two, ";")
+                  
+                  /*
+                  s len_dl = dl.zf()
+                  rg len_dl.length() &gt;= 2{
+                  s Zore_01 = zf.zzbds(dl.zf(), "[0-2]", 0)
+                  gj.sc(Zore_01.zf())
+                  }
+                  */
+                  
+                  //将用户等级±9区间内的值存入
+                  boss_name = zf.th(zf.qctwkg(up_text[0]), " ", "")
+                  sx = up_text[1]
+                  map = up_text[2]
+                  
+                  //带入倍率算法计算经验
+                  //|(replace[玩家等级-boss等级)]|＊boss经验 .[[0-5]=11,6=10,7=9,8=7,9=3,10=1]
+                  s boss_lv = up_text[3]
+                  s exp_true = up_text[4]
+                  
+                  
+                  rg boss_name ? "野王"{
+                    //gj.(dl_zf + 1)添加数据
+                    s values = {boss_name, sx, map, boss_lv, exp_true}
+                    lbmb.j(ids, values)
+                    lbmb.sx()
+                    
+                    
+                    /*
+                    java{
+                    string[] arrays_paixu = arrays.insertAndSort(values, array_y);
+                    System.out.print(arrays_paixu[0]);
+                    }
+                    */
+                    //处理排序
+                  }
+                }
+              },dl == "定点"{
+                xh s i=0, i&lt;len, i++{
+                  up_text_two = up_text_one[i]
+                  
+                  // gj.(up_text_two)
+                  
+                  up_text = zf.fg(up_text_two, ";")
+                  
+                  /*
+                  s len_dl = dl.zf()
+                  rg len_dl.length() &gt;= 2{
+                  s Zore_01 = zf.zzbds(dl.zf(), "[0-2]", 0)
+                  gj.sc(Zore_01.zf())
+                  }
+                  */
+                  
+                  //将用户等级±9区间内的值存入
+                  boss_name = zf.th(zf.qctwkg(up_text[0]), " ", "")
+                  sx = up_text[1]
+                  map = up_text[2]
+                  
+                  //带入倍率算法计算经验
+                  //|(replace[玩家等级-boss等级)]|＊boss经验 .[[0-5]=11,6=10,7=9,8=7,9=3,10=1]
+                  s boss_lv = up_text[3]
+                  s exp_true = up_text[4]
+                  
+                  
+                  rg boss_name ? "星"{
+                    //gj.(dl_zf + 1)添加数据
+                    s values = {boss_name, sx, map, boss_lv, exp_true}
+                    lbmb.j(ids, values)
+                    lbmb.sx()
+                    
+                    
+                    /*
+                    java{
+                    string[] arrays_paixu = arrays.insertAndSort(values, array_y);
+                    System.out.print(arrays_paixu[0]);
+                    }
+                    */
+                    //处理排序
+                  }
+                }
+              },dl == "无要求"{
+                xh s i=0, i&lt;len, i++{
+                  up_text_two = up_text_one[i]
+                  
+                  // gj.(up_text_two)
+                  
+                  up_text = zf.fg(up_text_two, ";")
+                  
+                  /*
+                  s len_dl = dl.zf()
+                  rg len_dl.length() &gt;= 2{
+                  s Zore_01 = zf.zzbds(dl.zf(), "[0-2]", 0)
+                  gj.sc(Zore_01.zf())
+                  }
+                  */
+                  
+                  //将用户等级±9区间内的值存入
+                  boss_name = zf.th(zf.qctwkg(up_text[0]), " ", "")
+                  sx = up_text[1]
+                  map = up_text[2]
+                  
+                  //带入倍率算法计算经验
+                  //|(replace[玩家等级-boss等级)]|＊boss经验 .[[0-5]=11,6=10,7=9,8=7,9=3,10=1]
+                  s boss_lv = up_text[3]
+                  s exp_true = up_text[4]
+                  
+                  
+                  
+                  //gj.(dl_zf + 1)添加数据
+                  s values = {boss_name, sx, map, boss_lv, exp_true}
+                  lbmb.j(ids, values)
+                  lbmb.sx()
+                  
+                  
+                  /*
+                  java{
+                  string[] arrays_paixu = arrays.insertAndSort(values, array_y);
+                  System.out.print(arrays_paixu[0]);
+                  }
+                  */
+                  //处理排序
+                }
+              }
+            },sxl != "无"{
+              xh s i=0, i&lt;len, i++{
+                up_text_two = up_text_one[i]
+                
+                // gj.(up_text_two)
+                
+                up_text = zf.fg(up_text_two, ";")
+                
+                /*
+                s len_dl = dl.zf()
+                rg len_dl.length() &gt;= 2{
+                s Zore_01 = zf.zzbds(dl.zf(), "[0-2]", 0)
+                gj.sc(Zore_01.zf())
+                }
+                */
+                
+                //将用户等级±9区间内的值存入
+                boss_name = zf.th(zf.qctwkg(up_text[0]), " ", "")
+                sx = up_text[1]
+                map = up_text[2]
+                
+                //带入倍率算法计算经验
+                //|(replace[玩家等级-boss等级)]|＊boss经验 .[[0-5]=11,6=10,7=9,8=7,9=3,10=1]
+                s boss_lv = up_text[3]
+                s exp_true = up_text[4]
+                
+                
+                rg boss_name ? yw_dd &amp;&amp; sx ? sxl{
+                  //gj.(dl_zf + 1)添加数据
+                  s values = {boss_name, sx, map, boss_lv, exp_true}
+                  lbmb.j(ids, values)
+                  lbmb.sx()
+                }
+                
+                /*
+                java{
+                string[] arrays_paixu = arrays.insertAndSort(values, array_y);
+                System.out.print(arrays_paixu[0]);
+                }
+                */
+                //处理排序
+              }
+            }
+          }
+          gj.jmxc(){
+            s dl = st.bjk(zy.i.bjk1)
+            s bczlb = st.tx(zy.i.tx3)
+            s lbsj = st.v7lb(zy.i.v7lb1)
+            gj.sc(lbsj.lbxmzs())
+            rg lbsj.lbxmzs() == 0 &amp;&amp; dl.zf() != ""{
+              bczlb.kjd("visible")
+            },{
+              bczlb.kjd("gone")
+            }
+          }
+          
+        }
+      }
+    }
+  }
+},{
+  s bczlb = st.tx(zy.i.tx3)
+  bczlb.kjd("gone")
+  hqlbsx()
+}</onClick></setOnClickListener></Yu5Src></LinearLayout><Yu5Src><setOnClickListener><onClick/></setOnClickListener></Yu5Src></androidx.cardview.widget.CardView></LinearLayout></LinearLayout></androidx.cardview.widget.CardView><androidx.cardview.widget.CardView android:id="@+id/kp3" android:layout_width="fill_parent" android:layout_height="fill_parent"><RelativeLayout android:id="@+id/xdbj1" android:layout_width="match_parent" android:layout_height="match_parent"><LinearLayout android:id="@+id/xxbj6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_horizontal"><androidx.recyclerview.widget.RecyclerView android:id="@+id/v7lb1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="#ffebebeb" android:overScrollMode="never"/></LinearLayout><LinearLayout android:id="@+id/xxbj9" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center"><ImageView android:id="@+id/tx3" android:layout_width="250dp" android:layout_height="250dp" android:src="@mipmap/i" android:visibility="gone"/></LinearLayout></RelativeLayout></androidx.cardview.widget.CardView></LinearLayout>

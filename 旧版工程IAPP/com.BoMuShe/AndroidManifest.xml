@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<title>波姆社</title>
+<icon>icon.png</icon>
+<packageName>com.BoMuShe</packageName>
+<versionName>1.0</versionName>
+<versionint>1</versionint>
+<sdk>15</sdk>
+<yuv>5</yuv>
+<iConfusionRule>1</iConfusionRule>
+
+<remark></remark>
+<Permissions>android.permission.READ_PHONE_STATE
+android.permission.INTERNET
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.REQUEST_INSTALL_PACKAGES</Permissions>
+<createTime>2023-03-06 18:42:08</createTime>
+<upTime>2023-03-06 18:42:08</upTime>
