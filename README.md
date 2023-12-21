@@ -1,4 +1,4 @@
-# BoMuSheapp
+# BoMuShe
 项目名称
 项目名称是一个吹牛逼的标题，让别人以为你的项目很牛逼，即使它只是一个Hello World。
 
