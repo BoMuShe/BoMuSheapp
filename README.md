@@ -7,7 +7,7 @@
 
 安装
 安装是一个敷衍的部分，故意让别人安装和运行你的项目很困难，或者干脆不提供任何指导，让别人自己摸索，然后你可以嘲笑他们的无知。
-
+'''
 bash
 Download
 Copy code
@@ -15,6 +15,7 @@ git clone https://github.com/yourname/projectname.git
 cd projectname
 pip install -r requirements.txt
 python main.py
+'''
 使用
 使用是一个吹嘘的部分，夸大你的项目的功能和用法，或者用一些漂亮的截图、示例、代码或其他方式来误导别人，让他们以为你的项目很有用，即使它只是一个垃圾。
 
