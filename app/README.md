@@ -26,19 +26,19 @@ Windows zip 64 1.1GB
 ```
 https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2022.3.1.21/android-studio-2022.3.1.21-windows.zip
 ```
-Mac 64 1.2 GB
+Mac 64 1.2GB
 ```
 https://redirector.gvt1.com/edgedl/android/studio/install/2022.3.1.21/android-studio-2022.3.1.21-mac.dmg
 ```
-Mac ARM 64 1.2 GB
+Mac ARM 64 1.2GB
 ```
 https://redirector.gvt1.com/edgedl/android/studio/install/2022.3.1.21/android-studio-2022.3.1.21-mac_arm.dmg
 ```
-Linux 64 1.2 GB
+Linux 64 1.2GB
 ```
 https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2022.3.1.21/android-studio-2022.3.1.21-linux.tar.gz
 ```
-ChromeOS 933.8 MB
+ChromeOS 933.8MB
 ```
 https://redirector.gvt1.com/edgedl/android/studio/install/2022.3.1.21/android-studio-2022.3.1.21-cros.deb
 ```
