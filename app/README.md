@@ -45,3 +45,5 @@ https://redirector.gvt1.com/edgedl/android/studio/install/2022.3.1.21/android-st
 
 **<font color=red>导入项目后需要自己编辑运行/调试配置</font>**  
 否则无法在虚拟机上运行  
+
+项目apk打包请存放在项目根目录下的app/release中
