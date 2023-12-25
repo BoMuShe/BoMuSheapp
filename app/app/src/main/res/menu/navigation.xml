@@ -3,11 +3,9 @@
     <item android:title="@string/bottom_nav_home"
         android:id="@+id/navigation_home"
         android:icon="@drawable/navigation_home"/>
-
     <item android:title="@string/bottom_nav_communtiy"
         android:id="@+id/navigation_community"
         android:icon="@drawable/navigation_community"/>
-
     <item android:title="@string/bottom_nav_my"
         android:id="@+id/navigation_my"
         android:icon="@drawable/navigation_my"/>
