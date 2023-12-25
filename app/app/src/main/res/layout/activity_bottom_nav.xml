@@ -19,6 +19,6 @@
         android:layout_height="70dp"
         android:foregroundGravity="center"
         app:menu="@menu/navigation"
-        app:labelVisibilityMode="labeled"/>
+        app:labelVisibilityMode="selected"/>
 
 </LinearLayout>

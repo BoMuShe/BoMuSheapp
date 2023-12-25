@@ -2,11 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="@string/bottom_nav_home"
         android:id="@+id/navigation_home"
-        android:icon="@drawable/navigation_home"/>
+        android:icon="@drawable/navigation_home"
+        android:orderInCategory="0"/>
     <item android:title="@string/bottom_nav_communtiy"
         android:id="@+id/navigation_community"
-        android:icon="@drawable/navigation_community"/>
+        android:icon="@drawable/navigation_community"
+        android:orderInCategory="1"/>
     <item android:title="@string/bottom_nav_my"
         android:id="@+id/navigation_my"
-        android:icon="@drawable/navigation_my"/>
+        android:icon="@drawable/navigation_my"
+        android:orderInCategory="2"/>
 </menu>
