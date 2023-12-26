@@ -1,6 +1,8 @@
 # <font color=Red>项目主意事项</font>
-## 1.导入
-### 配置项目的SDK路径
+## 目录
+* 1.[导入项目](#导入)
+### <span id="导入">1.导入项目</span>
+#### 配置项目的SDK路径
 该项目的工程**根目录**下需要自己配置local.properties文件（如果没有请在项目根目录创建一个）  
 local.properties文件中存放的是项目的SDK路径  
 
@@ -12,7 +14,7 @@ local.properties文件中存放的是项目的SDK路径
 sdk.dir=C\:\\Users\\你的用户名\\AppData\\Local\\Android\\Sdk
 ```
 
-### 本项目开发所使用的Android Studio版本信息：  
+#### 本项目开发所使用的Android Studio版本信息：  
 Android Studio Giraffe | 2022.3.1 Patch 2  
 内部版本号 #AI-223.8836.35.2231.10811636，2023年9月15日 构建  
 运行时版本: 17.0.6+0-b2043.56-10027231 amd64  
