@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(MainActivity.this, Bottom_nav.class);
                 startActivity(intent);
-                finish();
+                Intent intents = new Intent(MainActivity.this, Login.class);
+                startActivity(intents);
+                finish(); //界面销毁
             }
         },3000);
 
