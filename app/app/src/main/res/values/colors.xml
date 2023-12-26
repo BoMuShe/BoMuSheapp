@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="黑色">#FF000000</color>
+    <color name="白色">#FFFFFFFF</color>
+    <color name="灰色">#ECECECEC</color>
+    <color name="淡蓝色">#E2F6FF</color>
 </resources>
