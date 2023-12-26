@@ -18,7 +18,8 @@
         <activity
             android:name=".Community"
             android:exported="false" />
-        <activity android:name=".Bottom_nav" />
+        <activity
+            android:name=".Bottom_nav" />
         <activity
             android:name=".Home"
             android:exported="false" />
