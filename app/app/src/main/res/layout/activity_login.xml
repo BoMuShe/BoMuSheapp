@@ -16,7 +16,8 @@
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:gravity="center">
+                android:gravity="center"
+                android:onClick="Back">
 
                 <ImageView
                     android:layout_width="25dp"
@@ -344,6 +345,47 @@
                             </TextView>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
+                    <!--跳转功能-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="没有账号？"
+                                    android:textSize="15sp"
+                                    android:checked="true"
+                                    android:onClick="NoUserName"
+                                    tools:ignore="TouchTargetSizeCheck">
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="想起来了？"
+                                    android:textSize="15sp"
+                                    android:checked="true"
+                                    android:onClick="Login"
+                                    tools:ignore="TouchTargetSizeCheck">
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -472,6 +514,47 @@
                             </TextView>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
+                    <!--跳转功能-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="我有账号？"
+                                    android:textSize="15sp"
+                                    android:checked="true"
+                                    android:onClick="Login"
+                                    tools:ignore="TouchTargetSizeCheck">
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="忘记密码？"
+                                    android:textSize="15sp"
+                                    android:checked="true"
+                                    android:onClick="ForgotPassWrod"
+                                    tools:ignore="TouchTargetSizeCheck">
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

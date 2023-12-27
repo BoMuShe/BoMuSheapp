@@ -36,4 +36,8 @@ public class Login extends AppCompatActivity {
         forgot.setVisibility(View.GONE);
         signup.setVisibility(View.GONE);
     }
+
+    public void Back(View view) {
+        finish();
+    }
 }
